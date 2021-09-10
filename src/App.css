@@ -1,0 +1,31 @@
+.App {
+  background-image: url(./cropped-1440-3040-751400-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button {
+  background-color: blue;
+  color: wheat;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+@media screen and (min-width: 580px) {
+  .App {
+    background-image: url(./cropped-828-1792-751400=tab.png);
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .App {
+    height: 100vh;
+
+    background-image: url(./cropped-1366-768-751400.png);
+  }
+}
