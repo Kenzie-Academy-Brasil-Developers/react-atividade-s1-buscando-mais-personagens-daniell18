@@ -12,7 +12,9 @@ function CharCard({ character }) {
       ) : (
         <div className="others">
           <img src={character.image} alt="teste" />
-          {character.name}
+          {character.name.length > 15
+            ? `${character.name.slice(0, 16)}...`
+            : character.name}
         </div>
       )}
     </div>
